@@ -58,6 +58,8 @@ $(document).ready(function() {
     $(".slide#dua").backstretch("./images/image2.jpg");
     $(".slide#tiga").backstretch("./images/image3.jpg");
     $(".slide#empat").backstretch("./images/image4.jpg");
+    $(".slide#lima").backstretch("./images/image5.jpg");
+    $(".slide#enam").backstretch("./images/image6.jpg");
 
     $(".slide .backstretch img").on("dragstart", function (event) {
         event.preventDefault();

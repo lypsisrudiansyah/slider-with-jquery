@@ -19,6 +19,7 @@
     <script type="text/javascript" src="./src/jquery.simpleslider.js"></script>
     <script type="text/javascript" src="./src/backstretch.js"></script>
     <script type="text/javascript" src="./src/custom.js"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v11.0" nonce="EgXYMb0t"></script>
 
 </head>
 <body>
@@ -27,9 +28,11 @@
     </header>
 
     <div class="pagewrap">
-        <div class="fb-like" data-href="https://www.facebook.com/rudiansyah.mvc" data-layout="button_count"
+        <!-- <div class="fb-like" data-href="https://www.facebook.com/rudiansyah.mvc" data-layout="button_count"
             data-action="like" data-show-faces="false" data-share="true">
-        </div>
+        </div> -->
+        <div id="fb-root"></div>
+        <div class="fb-like" data-href="https://www.facebook.com/sekolahkoding" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
         <div class="githubbuttons">
             <iframe src="https://ghbtns.com/github-btn.html?user=lypsisrudiansyah&repo=slider-with-jquery&type=watch&count=true&v=2" frameborder="0" scrolling="0" width="80" height="20" title="GitHub"></iframe>
             <iframe src="https://ghbtns.com/github-btn.html?user=lypsisrudiansyah&repo=slider-with-jquery&type=fork&count=true" frameborder="0" scrolling="0" width="85" height="20" title="GitHub"></iframe>
@@ -79,12 +82,32 @@
                 </div>
                 <div class="slide" id="empat">
                     <div class="slidecontent">
-                        <span class="headersur">Sudah Selesai</span>
+                        <span class="headersur">Opsi Slider</span>
                         <h1>LIHAT</h1>
                         <div class="text">
-                            <p>Slider Sudah Selesai, Mau lihat opsi yang lain?</p>
+                            <p>Mau lihat opsi yang lain?</p>
                             <p>Ada methods, triggers dan tracker yang bisa dikonfigurasikan</p>
                             <a href="https://github.com/lypsisrudiansyah/slider-with-jquery" target="_blank"><div class="button">Cek</div></a>
+                            <div style="margin-top: 0;" class="button" onclick="mainslider.nextSlide();">Lihat Slider Lainnya</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" id="lima">
+                    <div class="slidecontent">
+                        <span class="headersur">Pepohonan</span>
+                        <h1>LIHAT</h1>
+                        <div class="text">
+                            <p>Bagaimana dengan gambar backgroundnya ?</p>
+                            <div class="button" onclick="mainslider.nextSlide();">Lihat Akhir Slider</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" id="enam">
+                    <div class="slidecontent">
+                        <span class="headersur">Sudah Selesai</span>
+                        <h1>Akhir Slider</h1>
+                        <div class="text">
+                            <p>Terima kasih telah mengakses website ini?</p>
                         </div>
                     </div>
                 </div>
