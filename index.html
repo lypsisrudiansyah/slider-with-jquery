@@ -1,0 +1,99 @@
+<html>
+<head>
+    <title>Membuat Image Slider Menggunakan jQuery</title>
+    <meta name="description" content="Sederhana dan sangat powerful:Slide slider">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:400,700" rel="stylesheet"> -->
+    <!-- Instalasi Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Include jQuery -->
+    <script src="./src/jquery-3.6.0.js"></script>
+    <script src="./src/jquery-migrate-1.2.1.min.js"></script>
+    
+    <!-- Include Slider Scripts -->
+    <script type="text/javascript" src="./src/jquery.simpleslider.js"></script>
+    <script type="text/javascript" src="./src/backstretch.js"></script>
+    <script type="text/javascript" src="./src/custom.js"></script>
+
+</head>
+<body>
+    <header id="top">
+        <div id="logo"><span class="logo">Slider menggunakan jQuery</span><span class="dynamic"></span></div>
+    </header>
+
+    <div class="pagewrap">
+        <div class="fb-like" data-href="https://www.facebook.com/rudiansyah.mvc" data-layout="button_count"
+            data-action="like" data-show-faces="false" data-share="true">
+        </div>
+        <div class="githubbuttons">
+            <iframe src="https://ghbtns.com/github-btn.html?user=lypsisrudiansyah&repo=bootstrap&type=watch&count=true&v=2" frameborder="0" scrolling="0" width="80" height="20" title="GitHub"></iframe>
+            <iframe src="https://ghbtns.com/github-btn.html?user=lypsisrudiansyah&repo=bootstrap&type=fork&count=true" frameborder="0" scrolling="0" width="85" height="20" title="GitHub"></iframe>
+            <iframe src="https://ghbtns.com/github-btn.html?user=lypsisrudiansyah&type=follow&count=true" frameborder="0" scrolling="0" width="250" height="20" title="GitHub"></iframe>
+            
+        </div>
+        <div class="pageblock" id="fullscreen">
+            <div class="slider">
+                <div class="slide" id="satu">
+                    <div class="slidecontent">
+                        <span class="headersur">Sangat powerfull dan sederhana diwaktu yang sama</span>
+                        <h1>SLIDE PERTAMA</h1>
+                        <div class="button" onclick="mainslider.nextSlide();">Lihat betapa sederhananya</div>
+                    </div>
+                </div>
+                <div class="slide" id="dua">
+                    <div class="slidecontent">
+                        <span class="headersur">Masukkan semua di sini</span>
+                        <h1>SLIDE KEDUA</h1>
+                        <div class="text">
+                            <p>Siapkan dan download file simpleslider.js, jquery.touchSwipe.min.js dan jquery.transit.js</p>
+                            <xmp>
+                                <script src="src/jquery-3.6.0.js"></script>
+                                <script src="src/jquery-migrate-1.2.1.min.js"></script>
+                                <script type="text/javascript" src="src/jquery.transit.js"></script>
+                                <script type="text/javascript" src="src/jquery.touchSwipe.min.js"></script>
+                                <script type="text/javascript" src="src/jquery.simpleslider.js"></script>
+                            </xmp>
+                        </div>
+                        <div class="button" onclick="mainslider.nextSlide();">Sudah ? Ayo Lanjutkan !</div>
+                    </div>
+                </div>
+                <div class="slide" id="tiga">
+                    <div class="slidecontent">
+                        <span class="headersur">Sudah siap ?</span>
+                        <h1>Langkah Berikutnya</h1>
+                        <div class="text">
+                            <p>Masukkan kode ini di HTML, cek <a href="https://github.com/lypsisrudiansyah/restofinder" target="_blank">Github README</a> Contoh HTML.</p>
+                            <xmp>
+                                $(document).ready(function() {
+                                    $(".slider").simpleSlider();
+                                });
+                            </xmp>
+                        </div>
+                        <div class="button" onclick="mainslider.nextSlide();">Selesai  ? Lanjutkan lagi!</div>
+                    </div>
+                </div>
+                <div class="slide" id="empat">
+                    <div class="slidecontent">
+                        <span class="headersur">Sudah Selesai</span>
+                        <h1>LIHAT</h1>
+                        <div class="text">
+                            <p>Slider Sudah Selesai, Mau lihat opsi yang lain?</p>
+                            <p>Ada methods, triggers dan tracker yang bisa dikonfigurasikan</p>
+                            <a href="https://github.com/lypsisrudiansyah/restofinder" target="_blank"><div class="button">Cek</div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            Project : <a href="https://www.facebook.com/rudiansyah.mvc" rel="publisher"> Rudiansyah</a>
+            <a href="https://github.com/lypsisrudiansyah">Github : Rudiansyah</a>
+        </div>
+    </div>
+</body>
+</html>
