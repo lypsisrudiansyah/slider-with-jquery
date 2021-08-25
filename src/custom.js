@@ -64,7 +64,7 @@ $(document).ready(function() {
     });
     $(".slidecontent").each(function () {
         console.log(-$(this).height());
-        $(this).css('margin-top', (-$(this).height() + 100) /2);
+        $(this).css('margin-top', (-$(this).height()) /2);
     });
     
 });
