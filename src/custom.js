@@ -6,16 +6,16 @@ $(document).ready(function() {
         slides: '.slide', // Nama slide di slidecontainer
         swipe: false, // handler swipe, wajib include touchSwipe
         transition: "slide", // Transisi slide => slide dan fade
-        slideTracker: true, // menambah pelacakan slide
+        slideTracker: false, // menambah pelacakan slide
         slideTrackerID: 'slideposition', // Nama pelacakan slide
-        slideOnInterval: false, // Interval slide
-        interval: 9000, // Interval slide, jika slideOnInterval is enabled/true
-        animateDuration: 1000, // Durasi animasi
-        animationEasing: 'ease', // Nilai yang diterima: linear ease in out in-out snap easeOutCubic
+        slideOnInterval: true, // Interval slide
+        interval: 10000, // Interval slide, jika slideOnInterval is enabled/true
+        animateDuration: 1200, // Durasi animasi
+        animationEasing: 'easeInBack', // Nilai yang diterima: linear ease in out in-out snap easeOutCubic
                                 // easeInOutCubic dll
         pauseOnHover: false, // Pause jika user mengarahkan cursor ke slide container
         magneticSwipe: true, // efek menmpel pada slide ketika di swipping/dragging
-        neverEnding: true, // aktifkan untuk membuat efek yang tidak pernah berhenti / neverending
+        neverEnding: false, // aktifkan untuk membuat efek yang tidak pernah berhenti / neverending
     };
 
     $(".slider").simpleSlider(options);
